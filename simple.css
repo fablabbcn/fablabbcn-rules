@@ -25,7 +25,7 @@ BODY STYLING
 }
 
 body {
-	background: url('http://www.demo.amitjakhu.com/login-form/images/bg.png');
+	/*background: url('http://www.demo.amitjakhu.com/login-form/images/bg.png');*/
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight:300;
 	text-align: left;
@@ -37,7 +37,7 @@ body {
 	/* Center wrapper perfectly */
 	width: 300px;
 	height: 400px;
-	margin: 70px auto;
+	margin: 40px 400px;
 }
 
 /* Download Button (Demo Only) */
@@ -79,7 +79,7 @@ body {
 	background: url(http://www.demo.amitjakhu.com/login-form/images/gradient.png) no-repeat;
 }
 */
-
+/*
 .gradient {
 	/* Center Positioning */
 	width: 600px;
@@ -102,7 +102,7 @@ body {
 	background-image: -ms-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
 	background-image: -o-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
 }
-
+*/
 /*******************
 LOGIN FORM
 *******************/
@@ -151,13 +151,13 @@ CONTENT
 *******************/
 
 .login-form .content {
-	padding: 0 30px 25px 30px;
+	padding: 0 0px 25px 30px;
 }
 
 /* Input field */
 .login-form .content .input {
 	width: 188px;
-	padding: 15px 25px;
+	padding: 5px 15px;
 	
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 400;
@@ -212,12 +212,12 @@ CONTENT
 	top:153px; /* Positioning fix for slide-in, got lazy to think up of simpler method. */
 	background: rgba(65,72,72,0.75) url(http://www.demo.amitjakhu.com/login-form/images/user-icon.png) no-repeat center;	
 }
-
+/*
 .pass-icon {
 	top:201px;
 	background: rgba(65,72,72,0.75) url(http://www.demo.amitjakhu.com/login-form/images/pass-icon.png) no-repeat center;
 }
-
+*/
 .content input:focus + div{
 	left: -46px;
 }

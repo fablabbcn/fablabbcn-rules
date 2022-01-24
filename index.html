@@ -1,394 +1,622 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Fab Lab Protocol 2021-22</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="Demo project">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <style type="text/css"></style>
+<!DOCTYPE html><html><head>
+      <title>Fab Lab Protocol 2021-2022</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="file:///C:\Users\Freerider\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+
+
+
+
+
+
+
+
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before,
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
     </head>
-<body>
-    <div class="container">
-<h1><p>Fab Lab Protocol 2021-22</p></h1>
-<h1>Spaces</h1>
-<p>FabLabs are comprised of several areas with distinct uses</p>
-<h2>P59 Fab Lab Pujades 59</h2>
-<p><img width="90%" alt="image alt text" src="images/image_0.jpg" /></p>
-<ul>
-<li>Central Space (Clean Area): A place to work on assembling your project together in a spacious, calm and clean area. It is forbidden the use of power tools and noisy/dusty machines here. </li>
-<li>
-<p>CNC / Wood workshop (Dusty Area): A place to work with noise and dust. This is the place to use the CNC Milling (ShopBot MTC on the booking system), wood power tools (Jigsaw, Circular saw, Belt sander, Router, Circular sander, Column driller, etc… on request), and some hand tools (Hammer/ Drill/ Saw/ Rulers/ Cutters/ Chisels, on free access).
-All the people who want to use the machines in this area should wear the proper clothing and follow the security measures at all times (see General Safety section)</p>
-</li>
-<li>
-<p>Laser Area: A place to work with  laser cutters. This is the place to use both Laser Cutters (Epilog XT Legend 36 + LaserPro Spirit GE on the booking system). Be careful to avoid looking at the laser beams and keep the door closed until total extraction of smoke, always stay next to the machine and in case flames are produced press the red button and call somebody from the staff. Don’t stay in this area if you don’t use the machines. Please remove all your leftovers pieces after using the machines. </p>
-</li>
-<li>Robot Area: A place to experiment with automation. Due to the inherent risk encountered in this area, students are requested to access it ONLY after approval AND under supervision of the staff.     </li>
-<li>3D printing and electronics room (Delicate Area): A place to work on smaller objects. This is the home for 3D printers and the place to work with electronics tools (Power supply, soldering iron, potentiometer, etc… ). Keep this small area clean and free for others to use. </li>
-<li>Material Lab (Dirty Area): A place to work with dirty and toxic materials (See toxic materials section below). This is the place to do any molding + casting, material experiments, paintings etc.. </li>
-<li>Staff office: Students are not allowed to work or enter in this area, it is reserved for staff only.
-Toxic Materials: Polyester Resin/Epoxy Resin/Composites/Molding and Casting products/Disolvents/Contact Glue (If you're not sure about a material please contact somebody from the staff) </li>
-</ul>
-<h2>P102 Fab Lab  Pujades 102</h2>
-<p><img width="90%" alt="image alt text" src="images/image_1.jpg" /></p>
-<ul>
-<li>Laser room: Only students who have a machine booking are allowed to use this area under staff supervision during the Master student open hours.</li>
-<li>CNC area: Students are allowed to use this area only under staff supervision and during Master student open hours.</li>
-<li>Fab Academy classroom: Students are not allowed to work in this area, it is reserved for staff and Fab Academy students only.</li>
-<li>Fab Lab office: Students are not allowed to work or enter in this area, it is reserved for staff only.</li>
-<li>3D printing room: Only students who have a machine booking are allowed to use this area under staff supervision during the Master student open hours.
-People not using the machines are not allowed in any of the Fab lab Areas: Please keep the space free for others.</li>
-</ul>
-<p>Tools and machines have each a designated area: Please keep it organized for others. </p>
-<p>Non-respect of these rules, leading to disorganization in the Lab, will be penalised. (see chapter "Penalties" at the end of this document)</p>
-<h1>Machines</h1>
-<p>IAAC offers student access to the following machines:</p>
-<h3>On request :</h3>
-<ul>
-<li>
-<p>Power tool set for wood (Jigsaw, Circular saw, Orbital &amp; Belt sander, Router, Drill. etc...)</p>
-</li>
-<li>
-<p>Electronic equipment (Camera, Tripod, Lights, Projectors etc)</p>
-</li>
-</ul>
-<h3>Via booking system (min 24h before) :</h3>
-<ul>
-<li>Laser Cutters - Epilog XT Legend 36 + LaserPro Spirit GE</li>
-</ul>
-<p><img alt="image alt text" src="images/image_2.jpg" />
-<img alt="image alt text" src="images/image_3.jpg" /></p>
-<ul>
-<li>CNC Milling machine – ShopBot MTC</li>
-</ul>
-<p><img alt="image alt text" src="images/image_4.jpg" /></p>
-<ul>
-<li>3D printers - Zortrax (x2)</li>
-</ul>
-<p><img alt="image alt text" src="images/image_5.jpg" /></p>
-<ul>
-<li>7 Axis Industrial Robotic Arm - Kuka KR150 / L110</li>
-</ul>
-<p><img alt="image alt text" src="images/image_6.jpg" /></p>
-<h3>Via email (min 48h before):</h3>
-<ul>
-<li>Laser Cutter - Multicam 2000 </li>
-</ul>
-<p><img alt="image alt text" src="images/image_7.jpg" /></p>
-<ul>
-<li>CNC Milling machine – ShopBot ATC</li>
-</ul>
-<p><img alt="image alt text" src="images/image_8.jpg" /></p>
-<ul>
-<li>CNC Precision Milling machine - Monofab SRM 20 (x2)</li>
-</ul>
-<p><img alt="image alt text" src="images/image_9.jpg" /></p>
-<ul>
-<li>Vinyl cutter GX-24 Camm Servo</li>
-</ul>
-<p><img alt="image alt text" src="images/image_10.jpg" /></p>
-<ul>
-<li>Vacuum Press </li>
-</ul>
-<p><img alt="image alt text" src="images/image_11.png" /></p>
-<ul>
-<li>Large Oven </li>
-</ul>
-<p><img alt="image alt text" src="images/image_12.jpg" /></p>
-<ul>
-<li>Bandsaw for Metal </li>
-</ul>
-<p><img alt="image alt text" src="images/image_13.jpg" /></p>
-<ul>
-<li>Power Tool set for metal</li>
-</ul>
-<h2><img alt="image alt text" src="images/image_14.png" /> <img alt="image alt text" src="images/image_15.jpg" /><img alt="image alt text" src="images/image_16.jpg" /></h2>
-<h2>Basic Tools in free access</h2>
-<img alt="image alt text" src="images/image_17.jpg" />
-<p>Some basic tools (Rulers, Clamps, Hammers, etc…) are accessible in the dusty/CNC area as a complement of your student’s toolkit.</p>
-<p>Students are requested to leave the tools used in his appropriate place marked in the designated area of their shelves.</p>
-<p>Tools should remain within the fablab area, in their respective room. Taking tools out of the lab without explicit permission will be penalised (see chapter "Penalties" at the end of this document</p>
-<h2>Power Tools and equipment on request</h2>
-<p>Power tools (Drill, Sander, ScrewDriver etc..) and some electronic equipment (Camera, power supply, Tripod, etc...) are available by request from the fab lab assistant. To keep the lab tools well organized and the process safe, students should request help from fabrication assistants. </p>
-<p><img alt="image alt text" src="images/image_18.jpg" />  <img alt="image alt text" src="images/image_19.png" />     <img alt="image alt text" src="images/image_20.jpg" /></p>
-<p>The students should give their ID as a deposit for the tool. This will be returned after student brings the tool back. The process includes the registration in our database of this equipment borrowing. </p>
-<p>All borrowed tools need to be given back in the timeframe agreed. Typical timeframes:</p>
-<ul>
-<li>
-<p>Manual &amp; Power tools  = by the end of the day (before 8 pm)</p>
-</li>
-<li>
-<p>Equipment         = within 24 hours</p>
-</li>
-</ul>
-<p>In case a student fails to do so he or she will be responsible to replace the item. Any misuse, loss or damage have to be noticed by informing one of the fabrication assistants. Failing to do so will be considered as a fault (See Penalty section).</p>
-<h2>Machines via Booking System</h2>
-<p>Some dedicated digital machines (Laser, 3D printer, etc..)  are available to students via booking system.  </p>
-   ![image alt text](image_21.jpg)               ![image alt text](image_22.jpg)    ![image alt text](image_23.jpg)
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="p102-lab-protocol-of-use">P102 Lab Protocol of Use</h1>
 
-<p>The booking procedure is as follows:</p>
-<ul>
-<li>
-<p>Before accessing the online booking system, it is obligatory to contact Iaac student coordinator first: send the files you need to print, cut or mill to <a href="mailto:fabrication.support@iaac.net">fabrication.support@iaac.net</a>  together with a description of the material to be processed.</p>
-</li>
-<li>
-<p>Once your files are checked, you will receive an email with feedback and further steps, including the approx time slot you will need, only then can you book a slot on the booking system.</p>
-</li>
-</ul>
-<p>Failing to respect this procedure will invalidate your booking and it will be cancelled by the staff. Repetitive misuse of the booking system will be considered as a fault (See penalty section).</p>
-<h3>Booking Instructions</h3>
-<p>To make your reservation, go to <a href="https://iaac.simplybook.it/v2/">https://iaac.simplybook.it/v2/</a></p>
-<p>1º  - Select the duration of the service you need depending of the machine (30 min, 1, 2, 3, 4 hours).</p>
-<p>2º  - Select the machine you want to use: milling machine, laser cutter, 3D printer or Kuka.</p>
-<p>3º  - Select the date and time: first, click the desired day in the calendar and you'll see available time slots on the right, click the one that suits you.</p>
-<p>4º  - Fill in your name (use your full, real name, otherwise the slot will be cancelled), email and phone number.</p>
-<p>5º  - To finish, click "BOOK NOW".</p>
-<p>Important:</p>
-<ul>
-<li>
-<p>To confirm your booking you need to find the reservation code in your email ( you should get the confirmation email right away), paste it into the booking system, click "confirm".</p>
-</li>
-<li>
-<p>The person who makes the reservation is the person who will be allowed to use the time slot. The reservation are not transferable to other student without advising staff. Failing to do so will invalidate the booking. </p>
-</li>
-<li>
-<p>Punctuality is important to let everyone use the space. You are requested to come 10 min before your reservation to load your file and prepare the material. Delay from students will shorten his fabrication time on the machine and will force us to quit the job at the end of the reservation time, even if not finished. More than 15min delay will cancel the reservation. Missing your reservation without notifying  fab lab staff will be considered as a fault (See the Penalties chapter).</p>
-</li>
-<li>
-<p>Bring your own material (unless your using 3D printers, see chapter "Supplies") </p>
-</li>
-<li>
-<p>Use the machine safely (see chapter "Safety")!</p>
-</li>
-</ul>
-<h2>Other machine and tools via email request</h2>
-<p>IAAC owns many other tools that students are allowed to use if available (not already in use by other IAAC activities) and if staff is available for support (most of these machines need specific staff supervision)</p>
-<p>If you wish to use one of this specific tools, please send us an email to <a href="mailto:fabrication.support@iaac.net">fabrication.support@iaac.net</a> explaining your needs and your schedules. </p>
-<p>Plan well ahead, and make your request at least 48h before needed.</p>
-<p>We are happy to offer the best possible for your project but can’t guarantee that those machines are available. </p>
-<h1>Contact</h1>
-<p>Any doubt, contact your FabLab Manager: Ricardo Valbuena (<a href="mailto:ricardo.valbuena@iaac.net">ricardo.valbuena@iaac.net</a>)</p>
-<h1>Support hours</h1>
-<p>Fabrication experts are available for project review within specific support hours every week. See masters calendar for precise schedules "Fabrication Support Hours"   </p>
-<p>These are hours in which the experts are available to schedule an appointment and help you in your project development and fabrication planning. </p>
-<p>MAA 01 support will be taken care by Raimund Krenmueller ;  MAI, OTF, MACT and MAA 02 support will be taken care by Kunaljit Chadha : </p>
-<p>In order to have a meeting with Raimund or Kunaljit, students have to send an email to the expert (Raimund or Kunaljit) and coordinator in cc (Marco, Maria, Alex M., Valentina), with the following information &gt;</p>
+<p><img src="assets\fablab2.jpg" alt="fablab2"></p>
+<h2 class="mume-header" id="general-guidelines">General Guidelines</h2>
+
+<h3 class="mume-header" id="introduction">Introduction</h3>
+
+<p>IAAC, the Institute for advanced Architecture of Catalonia,  is a center for research, education, production and outreach; a platform that gathers several Projects:</p>
+<pre class="language-text">  &#x25CF;	AAG - Advanced Architecture Group; that hosts the Master courses
+  &#x25CF;	Fab City Research Lab, that includes Fab Lab Barcelona, and the Fab Academy Program
+  &#x25CF;	Valldaura Labs
+  &#x25CF;	Urban Science Lab
+</pre>
+<p>It has 3 campus:</p>
+<pre class="language-text">&#x25CF;	Pujades 102 (P102), where Fab Lab Barcelona is located
+&#x25CF;	Pujades 59 (P59) or IAAC Atelier
+&#x25CF;	Valldaura Labs, where the Green Fab Lab is located
+</pre>
+<p>You will have most of your activity happening in Pujades 102 building or P102.</p>
+<h4 class="mume-header" id="access-to-p102-fab-lab-barcelona">Access to P102 / Fab Lab Barcelona</h4>
+
+<p><strong>Opening Hours:</strong></p>
+<p>Students have <strong>access</strong> to IAAC Facilities from 9:00hs to 20:00hs.<br>
+<strong>Fabrication time</strong> from 10:00hs to 14:00hs and from 15:00hs to 19:00hs.<br>
+Secretary office hours for students, Monday to Thursday, from 15 to 16 pm.<br>
+Saturdays and Sundays, the Fab Lab Barcelona is <strong>closed</strong>.<br>
+It is absolutely** forbidden** to stay at IaaC overnight.</p>
+<p><strong>National Holidays</strong></p>
+<pre class="language-text"> 1 de enero A&#xF1;o Nuevo (E)
+ 6 de enero Reyes (E)
+10 de Abril, Viernes Santo (E)
+13 de abril, Pascua (A)
+1 de mayo Fiesta del Trabajo (E)
+24 Junio, San Juan
+15 Agosto, la Asuncion
+11 de Septiembre Diada Nacional de Catalu&#xF1;a (A)
+24 de setiembre Virgen de la Merc&#xE8; (L)
+12 de octubre Fiesta Nacional de Espa&#xF1;a (E)
+1 de noviembre Todos los Santos (E)
+6 de diciembre D&#xED;a de la Constituci&#xF3;n (E)
+8 de diciembre la Inmaculada (E)
+25 de diciembre Navidad (E)
+26 de diciembre San Esteban (A)
+</pre>
+<p><strong>IaaC Access Card</strong><br>
+When you arrive at IAAC you will be provided with an electronic access card to enter the premises. For the access card, you will have to pay a 20&#x20AC; deposit, to be reimbursed when you return the item. Specific Annex at the end of the document.</p>
+<h2 class="mume-header" id="spaces">Spaces</h2>
+
+<p>IAAC offers the P102 facilities to the following students:</p>
+<pre class="language-text">    &#x25CF;	MDEF students
+    &#x25CF;	Fab Academy students
+    &#x25CF;	Fabricademy students
+    &#x25CF;	Workshop and Bootcamp students
+</pre>
+<p>P102 is comprised by several areas with distinct uses:</p>
+<h4 class="mume-header" id="p102-fab-lab-pujades-102-floor-plan">P102 - Fab Lab  Pujades 102 - floor plan</h4>
+
+<p><img src="assets\Screenshot%202022-01-24%20142346.jpg" alt="Screenshot 2022-01-24 142346"></p>
+<p>&#x25CF; <strong>Laser Area</strong>: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours.<br>
+&#x25CF; <strong>CNC area</strong>: Students are allowed to use this area only under staff supervision and during students open hours.<br>
+&#x25CF; <strong>Electronics and FAC Studio</strong>: This classroom is reserved for staff and Fab Academy students only.<br>
+&#x25CF; <strong>MDEF classroom</strong>: This classroom is reserved for staff and MDEF students only.<br>
+&#x25CF; <strong>3D printing room / Electronics</strong>: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours.<br>
+&#x25CF; <strong>Kuka Area</strong>: This area is reserved for staff only.<br>
+&#x25CF; <strong>Adaptable Area</strong>: this is a multipurpose area, you can use it only as a &#x201C;hot-desk&#x201D; and only if its available. No permanent projects or objects should be left in this area.<br>
+&#x25CF; <strong>Fabricademy classroom</strong>: this is your classroom and studio, you will have access to this room in the opening hours of IAAC and for the length of the course.</p>
+<p><em>People not using the machines are not allowed to remain in the areas surrounding the machines: Please keep the space free for other students using the space.<br>
+Tools and machines each have a designated area: Please keep it organized for others.<br>
+The lack of respect of these rules, leading to disorganization in the Lab, will be penalised. (see chapter &#x201C;Penalties&#x201D; at the end of this document)</em></p>
+<h4 class="mume-header" id="machines">Machines</h4>
+
+<p>P102 offers student access to the following machines:</p>
+<p><strong>On request :</strong><br>
+&#x25CF; Power tool set for wood (Jigsaw, Circular saw, Orbital &amp; Belt sander, Router, Drill. etc...)<br>
+&#x25CF; Electronic equipment (Camera, Tripod, Lights, Projectors etc)</p>
+<h5 class="mume-header" id="via-booking-system-minimum-24h-in-advance">Via booking system (minimum 24h in advance) :</h5>
+
+<p><strong>Laser Cutters</strong>:</p>
+<p><img src="assets\big_124314-1055005.jpg" alt="big_124314-1055005"><br>
+Trotec speedy 300  Trotec speedy 400</p>
+<p><strong>CNC Milling machine</strong><br>
+Raptor XSL CNC<br>
+<img src="assets\64456-16040484.webp" alt="64456-16040484">STEP</p>
+<p><strong>3D printers</strong>:<br>
+<img src="assets\image_21.jpg" alt="image_21"><br>
+Ender3 (x3)<br>
+Creality CR-10<br>
+Hypercube Evo<br>
+Formlab<br>
+Prusa i3<br>
+Photon S</p>
+<p><strong>CNC Precision Milling machine:</strong><br>
+<img src="assets\roland-mono-fab-srm-20-p80713057_2.png" alt="roland-mono-fab-srm-20-p80713057_2"><br>
+Monofab SRM 20 (x2)<br>
+<img src="assets\mdx20.jpg" alt="mdx20"><br>
+MDX-20<br>
+<img src="assets\61jUn4SAGeL._AC_SY355__kwmm3k2x2.jpg" alt="61jUn4SAGeL._AC_SY355_"><br>
+CNC 1810</p>
+<p><strong>Vinyl cutter</strong>:<br>
+<img src="assets\image_10.jpg" alt="image_10"><br>
+GX-24 Camm Servo<br>
+<img src="assets\plotter-de-corte-30-5cm-silhouette-cameo-3_iee2zdvxd.jpg" alt="plotter-de-corte-30-5cm-silhouette-cameo-3"><br>
+Silhoutte Cameo</p>
+<p><strong>Others</strong><br>
+<img src="assets\image_11_phxv3v87p.png" alt="image_11"><br>
+Vacuum Press<br>
+<img src="assets\image_12.jpg" alt="image_12"><br>
+Large Oven<br>
++<br>
+Vulcano Kilhn</p>
+<h5 class="mume-header" id="via-email-min-48h-before">Via email (min 48h before):</h5>
+
+<p><img src="assets\image_13.jpg" alt="image_13"><br>
+Bandsaw for Metal<br>
+<img src="assets\image_15.jpg" alt="image_15"><br>
+Power Tool set for metal</p>
+<h3 class="mume-header" id="basic-tools-in-free-access">Basic Tools in free access</h3>
+
+<p>Some basic tools (Rulers, Clamps, Hammers, etc&#x2026;) are accessible in the dusty/CNC area as a complement of your student&#x2019;s toolkit.<br>
+Students are requested to leave the tools used in his appropriate place marked in the designated area of their shelves.<br>
+Tools should remain within the fablab area, in their respective room. Taking tools out of the lab without explicit permission will be penalised (see chapter &#x201C;Penalties&#x201D; at the end of this document</p>
+<h3 class="mume-header" id="power-tools-and-equipment-on-request">Power Tools and equipment on request</h3>
+
+<p>Power tools (Drill, Sander, ScrewDriver etc..) and some electronic equipment (Camera, power supply, Tripod, etc...) are available by request from the fab lab assistant. To keep the lab tools well organized and the process safe, students should request help from fabrication assistants.</p>
+<p>The students should give their ID as a deposit for the tool in case of borrowing the tool out of the workshop area. This will be returned after student brings the tool back. The process includes the registration in our database of this equipment borrowing.<br>
+All borrowed tools need to be given back in the time frame agreed.</p>
+<p>Typical time frames:<br>
+&#x25CF; Manual &amp; Power tools 	= by the end of the day (before 8 pm)<br>
+&#x25CF; Equipment 		= within 24 hours<br>
+In case a student fails to do so he or she will be responsible to replace the item. Any misuse, loss or damage have to be noticed by informing one of the fabrication assistants. Failing to do so will be considered as a fault (See Penalty section).</p>
+<h3 class="mume-header" id="staff">Staff</h3>
+
+<p>Fabricademy and Fab Academy are part of our educational offer and as such is part of the FLU: Future Learning Unit.<br>
+Your references for Fabricademy are:</p>
+<pre class="language-text">  &#x25CF;	Anastasia Pistofidou: program Director
+  &#x25CF;	Josep Mart&#xED;: Instructor and tech support
+</pre>
+<p>Your references for Fab Academy are:</p>
+<pre class="language-text">&#x25CF;	Santiago Fuentemilla: Program Director
+&#x25CF;	Eduardo Chamorro: Lead Instructor
+</pre>
+<p>The rest of the Fab Lab Barcelona will be happy to support you in any regard.</p>
+<pre class="language-text">  You can contact us via info@fablabbcn.org
+</pre>
+<h3 class="mume-header" id="booking-system">Booking System</h3>
+
+<p>To be able to organize ourselves, we have a Booking System, that organizes our machining time. This booking system is used to book the Digital Fabrication Machines.</p>
+<p><img src="assets\Screenshot%202022-01-24%20143553.jpg" alt="Screenshot 2022-01-24 143553"></p>
+<p>To use any Digital Fabrication machine, you need to book it.  To book any machine you must have all the below things done:</p>
 <ol>
-<li>
-<p>A description of your issue/problem</p>
-</li>
-<li>
-<p>A sample of the script / 3D file you are using, additional picture and/or references of previous work are welcome</p>
-</li>
-<li>
-<p>Date and time availability for the appointment (within support hours)</p>
-</li>
-<li>
-<p>Group Members</p>
-</li>
-<li>
-<p>Class context </p>
-</li>
+<li>Sign these terms and conditions</li>
+<li>Have training in the use of EVERY MACHINE</li>
+<li>Pass the online test to use each machine</li>
+<li>Your name must be added to the trained user list.</li>
+<li><strong>You can only book machines during the FabLab Open days in 2022 will be Tuesdays and Fridays</strong></li>
 </ol>
-<p>Emails addresses &gt;</p>
-<ul>
-<li>
-<p>MAA 01:   raimund.krenmueller@iaac.net, marco.ingrassia@iaac.net</p>
-</li>
-<li>
-<p>MAA 02:   kunaljitsinghchadha@iaac.net, mathilde.marengo@iaac.net</p>
-</li>
-<li>
-<p>MAI:      kunaljitsinghchadha@iaac.net, valentina.toscano@iaac.net</p>
-</li>
-<li>
-<p>MACT:     kunaljitsinghchadha@iaac.net, alex.mademochoritis@iaac.net</p>
-</li>
-</ul>
-<h1>Supplies</h1>
-<p>Students are requested to bring their own materials. FabLab does not provide any material to the students apart from some basic consumable (such as sandpaper, screws, white glue and paper tape) available at the time in the lab.</p>
-<p>Here is a list of material and hardware suppliers: <a href="http://bit.ly/1MeHIQx">http://bit.ly/1MeHIQx</a></p>
-<p>NB: students can have a discount of 10% at SERVEI ESTACIO, using the code 10906 at the checkout. http://www.serveiestacio.com/   </p>
-<p>In the case of 3D Printer, Material is purchased by Fablab and charge to the students according to the final quantity of material used (price per gram). </p>
-<h1>Storage</h1>
-<p>Due to the amount of space available, there is no permanent storage.</p>
-<p>Students are allowed to store material only if it will be used in the same month. Everything should be stored in boxes with the name of the student / Name of the class or project and date of the beginning of storage. If this is not clearly visible on the box, this material may be displaced or used.</p>
-<p>The institution is not responsible for the materials left in the space and can’t guarantee the safety or integrity of your tools, project, and material if not properly stored. To avoid any issue with a lost or broken object, please get in touch with any Fabrication assistant to find a proper solution. </p>
-<p>Additionally, IAAC FabLab Staff has specific storage spaces that should be respected. Never pick an item from this shelves in self-services.  In doubt, always ask before.  </p>
-<ul>
-<li>
-<p>3D Print Material shelves: A place to store 3dPrint materials. To be used only under FabLab Staff supervision. Students are requested to leave the 3d print materials used in the appropriate place marked in the 3d print shelves. Please keep the materials well organized.</p>
-</li>
-<li>
-<p>Material Lab Shelves: A place to store mixing, casting and cleaning material for the lab. Access only under Staff authorization and supervision.</p>
-</li>
-<li>
-<p>Kuka Room Shelves: A place for Robot related tools. Staff only, Students are forbidden to take any items from this area.</p>
-</li>
-<li>
-<p>Storage room:  Staff only, Students do not have access to this area. </p>
-</li>
-</ul>
-<h1>Safety</h1>
-<p>Use of this facility requires the use of standard safety precautions at all times. This includes but is not limited to:</p>
-<ul>
-<li>
-<p>Never work alone</p>
-</li>
-<li>
-<p>Be aware of how to stop the machine to be used, and how to call for help before starting to use any machine.</p>
-</li>
-<li>
-<p>All students must wear safety glasses while using :</p>
-</li>
-<li>
-<p>Milling machine</p>
-</li>
-</ul>
-<p><img alt="image alt text" src="images/image_24.jpg" /></p>
-<ul>
-<li>Circular saw/Compound saw</li>
-</ul>
-<p><img alt="image alt text" src="images/image_25.jpg" /></p>
-<ul>
-<li>Column Drill</li>
-</ul>
-<p><img alt="image alt text" src="images/image_26.jpg" /></p>
-<ul>
-<li>Jig-saw</li>
-</ul>
-<p><img alt="image alt text" src="images/image_27.jpg" /></p>
-<ul>
-<li>Angle Grinder</li>
-</ul>
-<p><img alt="image alt text" src="images/image_28.png" /></p>
-<ul>
-<li>Dremel</li>
-</ul>
-<p><img alt="image alt text" src="images/image_29.jpg" /></p>
-<ul>
-<li>Sanding Machines.</li>
-</ul>
-<p><img alt="image alt text" src="images/image_30.png" /></p>
-<ul>
-<li>
-<p>Ear protection and dust masks are available and should be worn when necessary.</p>
-</li>
-<li>
-<p>Safety glasses are the student’s responsibility, students must not work in this space without them, if there aren’t any available when you enter to the shop, it’s no excuse to work without them. Ask for them to the Fabrication assistants!</p>
-</li>
-<li>
-<p>Only closed-toe shoes should be worn in the lab areas.</p>
-</li>
-<li>
-<p>Long hair has to be tied up. Loose clothes should be tightened, and dangling jewelry should be removed before entering the lab areas. These can get caught on the tools or machines.</p>
-</li>
-<li>
-<p>Wear a dust mask when performing grinding or other operations that may generate fine airborne particles.</p>
-</li>
-<li>
-<p>Do not leave tools on the machine when you finish. Put them in their allocated place.</p>
-</li>
-<li>
-<p>Always be aware of the safe operation of the machines. If you're unfamiliar with a particular machine, consult the workshop staff before using it.</p>
-</li>
-<li>
-<p>Do not make parts in haste. Plan each job and procedure in advance. Determine what material and special tools may be needed.</p>
-</li>
-<li>
-<p>Use the dustpan or vacuum to remove chips from a machine while it is not running; this is NOT to be done by hand.</p>
-</li>
-<li>
-<p>Each student is required to report all issues, accidents, and tool breakages to Ricardo Valbuena or the fabrication assistance (If neither are available, please report this to mathilde.marengo@iaac.net)</p>
-</li>
-<li>
-<p>No food or drinks are allowed in the workshop areas.</p>
-</li>
-<li>
-<p>Respect the machines and what they can (and can’t) do; never, ever use the machines for anything other than what they were designed to do, and never tamper, alter, or play with the equipment!</p>
-</li>
-<li>
-<p>All students are required to clean the machine and sweep the work area before leaving the lab areas.</p>
-</li>
-</ul>
-<p>(You can check more in detail Safety section in: http://wiki.fablabbcn.org/Main_Page)</p>
-<h1>Cleaning/Maintenance</h1>
-<p>In the interest of promoting cleaning and safe workplace, Students are required to clean all machines after use. </p>
-<p>In the special case of;</p>
-<ul>
-<li>
-<p>Shopboot:  includes dust anywhere on or under the machine, and on top of the control-box and computer. </p>
-</li>
-<li>
-<p>Jigsaw: you should clean it from dust and replace broken blades</p>
-</li>
-<li>
-<p>Drill Press : Clean all the surface of the machine, table  and surroundings</p>
-</li>
-<li>
-<p>Compound Circular saw: Cleaning surface, on top of the machine and table.</p>
-</li>
-<li>
-<p>3D Printer: Cleaning the machine and removing small pieces from the surface.</p>
-</li>
-<li>
-<p>Laser cutter: After using the machine remove the material and clean the top of the bed, in case of small pieces remove the bed and vacuum the left overs (call somebody from the staff for support removing the bed)</p>
-</li>
-</ul>
-<p>In the case of finding a dirty machine prior to commencing your work, please advise staff and clean it before starting the job. Working in a dirty environment is dangerous, risks compromising the machine’s safety or operation and will not be tolerated.</p>
-<p>After use machines, students are requested to leave the tools in their appropriate storage space. Correct Storage of the tools is one the key aspects, thus keeping the workplace clean and safe. Failing to respect this procedure will be considered as a fault (See the sanction chapter).</p>
-<p>To reduce the number of waste materials and trying to promote activities on recycling and reuse it is important to separate and cut up all materials after use. Students are requested to cut up materials in different formats with the objective of proper storage. Any material with a value of more than 5€ should be kept. Wood leftovers should be cut into rectangular pieces.</p>
-<p>In case of recycling material from the Laser cutter, it should be cut into standard sizes like A1/A2/A3/600*300mm  to facilitate storage.</p>
-<h1>Penalties</h1>
-<p>In order to ensure  clean, safe and healthy areas and to reduce the number of risks of regulatory failures, the Fab Lab Protocol establishes Basic regulation penalties.</p>
-<p>The following misconducts will be penalised :</p>
-<ul>
-<li>
-<p>Dangerous behavior, including disrespecting the safety measures recommended in this document, will incur a penalty</p>
-</li>
-<li>
-<p>Avoiding cleaning responsibility, especially after the use of tools and machines, will incur a penalty. </p>
-</li>
-<li>
-<p>Delay or not attending in any booking slot will incur a penalty. </p>
-</li>
-<li>
-<p>Displacing / Borrowing tools outside of the lab without having been registered by a  Fab Lab staff will incur a penalty.</p>
-</li>
-<li>
-<p>Breaking a tool or machine without advising the Fab Lab staff, will incur a penalty.</p>
-</li>
-<li>
-<p>Use of the lab without supervision will incur a penalty (the Fab Lab is fitted with a surveillance system).</p>
-</li>
-</ul>
-<p>The first act of misconduct will trigger a formal warning through an  email communicating the specific misconduct and requesting more awareness. </p>
-<p>The second act of misconduct will incur a penalty: the student will be prohibited  from using the Fab Lab machines for one week.</p>
-<p>The third act of misconduct will directly forbid the student’s access to  the Fab Lab space until the end of the semester. </p>
-<p>Students have to send the file (as soon as the slot is booked to use a machine) to the fabrication assistants to check and prepare the file to run directly without wasting any time. USB drives will not be accepted for reviewing  files by the fabrication assistants. This will be strictly enforced.</p>
-<p>Every person should have their individual RFID door entry card, which is not transferable. In case of visitors, staff need to to be notified before letting anyone inside the building. Failure to do so, the student will be penalised.</p>
-<p>The students are advised not to keep their belongings like coats, helmets and bags obstructing any areas, the function of equipment and movement of people in the building. Failure to do this could incur a penalty</p>
+<p><strong>Online Booking System Instructions</strong></p>
+<p>To make your reservation, go to <a href="https://fablabbcn.simplybook.it/v2/">https://fablabbcn.simplybook.it/v2/</a><br>
+1&#xBA;  Select the duration of the service you need depending of the machine (30 min, 1 or 2 hours).<br>
+2&#xBA;  Select the machine you want to use: milling machine, laser cutter, 3D printer or Kuka.<br>
+3&#xBA;  Select the date and time: first, click the desired day in the calendar and you&apos;ll see available time slots on the right, click the one that suits you.<br>
+4&#xBA;  Fill in your name (use your full, real name, otherwise the slot will be cancelled), email and phone number.<br>
+5&#xBA;  To finish, click &quot;BOOK NOW&quot;.</p>
+<p><em>Important Rules and Conditions</em><br>
+Failure to respect the rules and conditions pertaining to the booking system will result in a cancellation of the booking by staff. Repetitive misuse of the booking system will be<br>
+considered a fault (See Penalty section).</p>
+<h5 class="mume-header" id="machines-1">Machines</h5>
 
-    <script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-    onload="if(submitted) {window.location='confirmation.htm';}"></iframe>
+<p>&#x25CF; Students are not allowed to use more than one slot per machine per day.<br>
+&#x25CF; Students are not allowed to use more than four slots per machine per month.<br>
+&#x25CF; Students cannot use machines without supervision.<br>
+&#x25CF; It&apos;s not allowed for the students to use the machines for personal projects or external<br>
+projects.<br>
+&#x25CF; Please verify that the machine requested is booked using the booking system of the<br>
+appropriate lab/facility.<br>
+&#x25CF; The person who makes the reservation will be the only one allowed to use the time slot.<br>
+Reservations are non-transferable. Failing to comply will automatically cancel the<br>
+booking.<br>
+&#x25CF; Students should come with a file prepared beforehand and ready to launch at the<br>
+beginning of their slot.<br>
+&#x25CF; It is mandatory to have your files in Rhino v6 file, .DXF or .STL to properly use the<br>
+machines.<br>
+&#x25CF; Punctuality is important to allow everyone fair use of the space. You are requested to<br>
+come 10 min before your reservation to prepare your material and file. Any delay will<br>
+shorten that student&#x2019;s fabrication time on the machine. A delay of more than 15 minutes<br>
+automatically results in a cancelled reservation. Missing your reservation without<br>
+notifying Fab lab staff will be considered as a fault (See Penalties section).<br>
+&#x25CF; If your project requires more time than what is allocated, it is obligatory to contact your<br>
+assigned fabrication expert and <a href="mailto:fabrication.support@iaac.net">fabrication.support@iaac.net</a> with the files you need to<br>
+print, cut or mill along with a description of the material to be used.<br>
+&#x25CF; Students should always keep workspaces clean after use and return any tools.<br>
+&#x25CF; Bring your own material (unless you are using the 3D printers, see Supplies section) .<br>
+&#x25CF; Always stay attentive and practice safe machine usage (See Safety)!</p>
+<h5 class="mume-header" id="lending-tools">Lending tools</h5>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfafs_4JOvDZ4ZsUqjHRq9DMVL8qIa9MuFaMqL5ziOuAEyFvg/formResponse" method="post" target="hidden_iframe"
-        onsubmit="submitted=true;">
+<p>&#x25CF; The person renting the equipment will be the one responsible to return it in proper<br>
+working condition. In the case of group work, one member will need to be designated<br>
+as the one responsible to rent out and return the tool in good working order.<br>
+&#x25CF; All rented tools need to be given back in the time frame agreed.<br>
+&#x25CF; In case a tool is damaged or broken, the student responsible should inform the Fab<br>
+team. Not inform about the damage or the bad conditions tool will be automatically<br>
+penalised (See Penalties section). In case of damage, the respective students are liable<br>
+to replace the tools.</p>
+<p><strong>Failing to comply with any of these rules will invalidate the booking and will be penalized.</strong></p>
+<h5 class="mume-header" id="other-machine-and-tools-via-email-request">Other machine and tools via email request</h5>
 
-        <div class="content">
-            <p><input name="entry.1141001517" type="text" class="input username" placeholder="Name" /></p>
-            <div class="user-icon"></div>
-            <p><input name="entry.204365779" type="email" class="input username" placeholder="Email" /></p>
-            <p style="font-size: 16px;"><input name="entry.2125231287_sentinel" type="checkbox" class="" placeholder="" />
-             I have red and understood the rules</p>
-            <div class="pass-icon"></div>
-            <p><input type="submit" name="submit" value="Submit" class="register" /></p>
-        </div>
+<p>IAAC owns many other tools that students are allowed to use if available (not already in use by other IAAC activities) and if staff is available for support (most of these machines need specific staff supervision).<br>
+If you wish to use one of this specific tools, please explain your needs and your schedule.<br>
+Plan well ahead, and make your request at least 48h before needed.<br>
+We are happy to offer the best possible for your project but can&#x2019;t guarantee that those machines are available.</p>
+<h3 class="mume-header" id="hazardous-materials">Hazardous Materials</h3>
 
-    </form>
-</div>
-</body>
-</html>
+<p>Working safely with hazardous chemicals requires proper use of laboratory equipment. Maintenance and regular inspection of laboratory equipment are essential parts of this activity.Please note that special attention would be required for the use of the laboratory, many of the accidents that occur in the laboratory can be attributed to improper use or maintenance oflaboratory equipment.</p>
+<p><img src="assets\Screenshot%202022-01-24%20143133.jpg" alt="Screenshot 2022-01-24 143133"></p>
+<p>IAAC provides students with gloves and lab coats. Please note that care should be taken to use gloves when handling laboratory equipment to protect against electrical, thermal, and chemical burns, cuts, and punctures. Some materials, such as graphene nanoplates, require specific staff supervision and control of their use. Students are not allowed to take products provided by IAAC outside of IAAC facilities.Trash, algae, batteries or any other material substances that can obstruct the sink should not be disposed of via wastewater. Students should use the respective bins located around the buildings.</p>
+<h3 class="mume-header" id="cleaning-and-maintenance">Cleaning and Maintenance</h3>
+
+<p>In the interest of promoting a clean and safe workplace, Students are required to clean all machines after use. In the special case of:</p>
+<ul>
+<li><strong>CNC Milling</strong>: Includes small dust pieces anywhere on or under the machine, and on top of the control-box and computer.</li>
+<li><strong>Jigsaw</strong>: Should be cleaned from dust and replace any broken blades.<br>
+-<strong>Drill Press:</strong> Clean all the surface of the machine, table and surroundings.</li>
+<li><strong>Compound Circular saw:</strong> Cleaning surface, on top of the machine and table.</li>
+<li><strong>3D Printer</strong>: Cleaning the machine and removing small pieces from the platform.<br>
+-<strong>Laser cutter:</strong> After using the machine remove the material and clean the top of the bed,<br>
+in case of small pieces removed the bed and vacuum the leftovers (call somebody from the staff for support removing the bed)</li>
+<li><strong>Matter Lab:</strong> leaving the surfaces clear and clean, in the case of materials that are drying out such as plaster casting, notify the fabricant assistant.</li>
+<li><strong>Carpenter table in the wood workshop.</strong></li>
+</ul>
+<p>In the case of finding a dirty machine prior to commencing your work, please find the person responsible and advise staff about the situation. Otherwise you should clean it before starting the job. Working in a dirty environment is dangerous, risks compromising the machine&#x2019;s safety or operation and will not be tolerated. After using a machine, students are requested to leave the tools in their appropriate storage space. Correct storage of the tools is key to keeping the workplace clean and safe. Failing to comply will be considered as a fault (See Penalty section). In an effort to reduce the amount of waste materials and promote recycling and reuse, it is important to separate and cut down all material off-cuts after use. Students are requested to cut up materials, such as wood and acrylics, in rectangular formats for easy storage.</p>
+<h3 class="mume-header" id="supplies">Supplies</h3>
+
+<p>In general, FabLab does not provide any material to the students apart from some basic consumable (such as sandpaper, screws, white glue and paper tape) available at the time in the lab.<br>
+Here is a list of material and hardware suppliers: <a href="http://bit.ly/1MeHIQx">http://bit.ly/1MeHIQx</a><br>
+NB: students can have a discount of 10% at SERVEI ESTACIO, using the code 10906 at the checkout. <a href="http://www.serveiestacio.com/">http://www.serveiestacio.com/</a></p>
+<p>In the case of 3D Printer, Material is purchased by Fablab and based on normal usage for the academic needs, unusual or alternative materials are  needed the student will have to purchase on their on, use it and keep it in a safe place in the lab properly identified with the students name and contact details.<br>
+Storage<br>
+Due to the amount of space available, there is no permanent storage.<br>
+Students have designated storage space in their classrooms.<br>
+Students are allowed to store material in the Fab Lab only if it will be used in the same month. Everything should be stored in boxes with the name of the student / Name of the class or project and date of the beginning of storage. If this is not clearly visible on the box, this material may be displaced or used.<br>
+The institution is not responsible for the materials left in the space and can&#x2019;t guarantee the safety or integrity of your tools, project, and material if not properly stored. To avoid any issue with a lost or broken object, please get in touch with any Fabrication assistant to find a proper solution.</p>
+<p>Additionally, IAAC FabLab Staff has specific storage spaces that should be respected. Never pick an item from this shelves in self-services.  In doubt, always ask before.<br>
+&#x25CF; 3D Print Material shelves: A place to store 3DPrint materials. To be used only under FabLab Staff supervision. Students are requested to leave the 3d print materials used in the appropriate place. Please keep the materials well organized.<br>
+&#x25CF; Material Lab Shelves: A place to store mixing, casting and cleaning material for the lab. Access only under Staff authorization and supervision.<br>
+&#x25CF; Storage Shelves/Cabinets:  Staff only, Students do not have access to this area.</p>
+<p>All leftover projects- materials left on the workbenches or main workspaces at the end of the day will be put in the disposal cart and thrown away every Friday afternoon.<br>
+If a project needs temporal storage in the workbenches or main workspaces is mandatory to put a tag with the students name, contact information and when the project will be removed from that location</p>
+<h3 class="mume-header" id="safety">Safety</h3>
+
+<p>Use of this facility requires the use of standard safety precautions at all times. This includes but is not limited to:<br>
+&#x25CF; Never work alone.<br>
+&#x25CF; Be aware of how to stop the machine to be used, and how to call for help before starting to use any machine.<br>
+&#x25CF; All students must wear safety glasses while using :</p>
+<pre class="language-text">  Milling machine
+  Circular saw
+  Column Drill
+  Jig-saw
+  Angle Grinder
+  Dremel
+  Sanding Machines
+</pre>
+<p>&#x25CF; Ear protection and dust masks are available and should be worn when necessary.<br>
+&#x25CF; Safety glasses are the student&#x2019;s responsibility, students must not work in this space without them, if there aren&#x2019;t any available when you enter to the shop, it&#x2019;s no excuse to work without them. Ask for them to the Fabrication assistants!<br>
+&#x25CF; Only closed-toe shoes should be worn in the lab areas.<br>
+&#x25CF; Long hair has to be tied up. Loose clothes should be tightened, and dangling jewelry should be removed before entering the lab areas. These can get caught on the tools or machines.<br>
+&#x25CF; Wear a dust mask when performing grinding or other operations that may generate fine airborne particles.<br>
+&#x25CF; Do not leave tools on the machine when you finish. Put them in their allocated place.<br>
+&#x25CF; Always be aware of the safe operation of the machines. If you&apos;re unfamiliar with a particular machine, consult the workshop staff before using it.<br>
+&#x25CF; Do not make parts in haste. Plan each job and procedure in advance. Determine what material and special tools may be needed.<br>
+&#x25CF; Use the dustpan or vacuum to remove chips from a machine while it is not running; this is NOT to be done by hand.<br>
+&#x25CF; Each student is required to report all issues, accidents, and tool breakages to Ricardo Valbuena or the fabrication assistance (If neither are available, please report this to <a href="mailto:mathilde.marengo@iaac.net">mathilde.marengo@iaac.net</a>)<br>
+&#x25CF; No food or drinks are allowed in the workshop areas.<br>
+&#x25CF; Respect the machines and what they can (and can&#x2019;t) do; never, ever use the machines for anything other than what they were designed to do, and never tamper, alter, or play with the equipment!<br>
+&#x25CF; All students are required to clean the machine and sweep the work area before leaving the lab areas.<br>
+(You can check more in detail Safety section in: <a href="http://wiki.fablabbcn.org/Main_Page">http://wiki.fablabbcn.org/Main_Page</a>)</p>
+<h3 class="mume-header" id="security">Security</h3>
+
+<p>IaaC | Fab Lab Bcn is not responsible for any material loss within its facilities, and does not cover any material insurance. Students are responsible for their personal belongings at all times.</p>
+<h3 class="mume-header" id="safety-1">Safety</h3>
+
+<p>IaaC | Fab Lab Bcn is not responsible for any personal damages derived from the use its facilities, and does not cover student&#x2019;s health insurance. Students are responsible for their personal safety at all times. If damage or injury should occur, the student must seek immediate assistance and notify any IaaC | Fab Lab Bcn staff person as soon as possible, no matter how small the issue is. IaaC | Fab Lab Bcn has several fire extinguishers and first aid kits.</p>
+<p><strong>Food/Drinks:</strong> Food and drinks are not allowed in any of the Fab Lab areas. Students have the responsibility to pick up their trash, leaving the spaces and tables clean.</p>
+<p><strong>Smoking</strong>: Smoking is strictly prohibited everywhere in the building.</p>
+<p><strong>Bicycle/Motorcycles/Cars</strong>: Students are not allowed to park their motorcycles or cars inside the building. Bicycles may be parked inside the Institute, but must be left in specially designated areas. IaaC | Fab Lab Bcn is not responsible for any damage or loss. If a bike was left outside a designated area, blocking an entrance way, door or other, IaaC | Fab Lab Bcn reserves the right to break the lock or take alternative measures to remove it.</p>
+<h3 class="mume-header" id="cleaningmaintenance">Cleaning/Maintenance</h3>
+
+<p>In the interest of promoting cleaning and safe workplace, Students are required to clean all machines after use.<br>
+In the special case of;</p>
+<ul>
+<li>Shopbot:  includes dust anywhere on or under the machine, and on top of the control-box and computer.</li>
+<li>Jigsaw: you should clean it from dust and replace broken blades</li>
+<li>Drill Press : Clean all the surface of the machine, table  and surroundings</li>
+<li>Compound Circular saw: Cleaning surface, on top of the machine and table.</li>
+<li>3D Printer: Cleaning the machine and removing small pieces from the surface.</li>
+<li>Laser cutter: After using the machine remove the material and clean the top of the bed, in case of small pieces remove the bed and vacuum the left overs (call somebody from the staff for support removing the bed)</li>
+</ul>
+<p>In the case of finding a dirty machine prior to commencing your work, please advise staff and clean it before starting the job. Working in a dirty environment is dangerous, risks compromising the machine&#x2019;s safety or operation and will not be tolerated.<br>
+After use machines, students are requested to leave the tools in their appropriate storage space. Correct Storage of the tools is one the key aspects, thus keeping the workplace clean and safe. Failing to respect this procedure will be considered as a fault (See the sanction chapter).<br>
+To reduce the number of waste materials and trying to promote activities on recycling and reuse it is important to separate and cut up all materials after use. Students are requested to cut up materials in different formats with the objective of proper storage. Wood leftovers should be cut into rectangular pieces.</p>
+<h3 class="mume-header" id="penalties">Penalties</h3>
+
+<p>In order to ensure  clean, safe and healthy areas and to reduce the number of risks of regulatory failures, the Fab Lab Protocol establishes Basic regulation penalties.<br>
+The following misconducts will be penalised :</p>
+<ul>
+<li>Dangerous behavior, including disrespecting the safety measures recommended in this document, will incur a penalty</li>
+<li>Avoiding cleaning responsibility, especially after the use of tools and machines, will incur a penalty.</li>
+<li>Delay or not attending in any booking slot will incur a penalty.</li>
+<li>Displacing / Borrowing tools outside of the lab without having been registered by a  Fab Lab staff will incur a penalty.</li>
+<li>Breaking a tool or machine without advising the Fab Lab staff, will incur a penalty.</li>
+<li>Use of the lab without supervision will incur a penalty (the Fab Lab is fitted with a surveillance system).</li>
+</ul>
+<p><strong>The first act</strong> of misconduct will trigger a formal warning through an  email communicating the specific misconduct and requesting more awareness.<br>
+<strong>The second act</strong> of misconduct will incur a penalty: the student will be prohibited  from using the Fab Lab machines for one week.<br>
+<strong>The third act</strong> of misconduct will directly forbid the student&#x2019;s access to  the Fab Lab space until the end of the term.</p>
+<p>Students have to send the file (as soon as the slot is booked to use a machine) to the fabrication assistants to check and prepare the file to run directly without wasting any time. USB drives will not be accepted for reviewing  files by the fabrication assistants. This will be strictly enforced.<br>
+Every person should have their individual RFID door entry card, which is not transferable. In case of visitors, staff need to be notified before letting anyone inside the building. Failure to do so, the student will be penalised.<br>
+The students are advised not to keep their belongings like coats, helmets and bags obstructing any areas, the function of equipment and movement of people in the building. Failure to do this would incur a penalty</p>
+<h3 class="mume-header" id="copyright-and-open-source">Copyright and Open Source</h3>
+
+<p>All the work produced by the students during the course of the program for the<br>
+weekly assignments and final projects contributed will be licensed under the<br>
+Attribution-NonCommercial-ShareAlike 3.0 Unported Creative Commons license<br>
+(<a href="https://creativecommons.org/licenses/by-nc-sa/3.0">https://creativecommons.org/licenses/by-nc-sa/3.0</a> )</p>
+
+
+
+<h3 class="mume-header" id="penalties">SIGN THE AGREEMENT OF TERMS AND CONDITIONS OF LAB USAGE</h3>
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+onload="if(submitted) {window.location='confirmation.htm';}"></iframe>
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfafs_4JOvDZ4ZsUqjHRq9DMVL8qIa9MuFaMqL5ziOuAEyFvg/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+
+    <div class="content">
+        <p><input name="entry.1141001517" type="text" class="input username" placeholder="Name" /></p>
+        <div class="user-icon"></div>
+        <p><input name="entry.204365779" type="email" class="input username" placeholder="Email" /></p>
+        <p style="font-size: 16px;"><input name="entry.2125231287_sentinel" type="checkbox" class="" placeholder="" />
+         I have red and understood the rules</p>
+        <div class="pass-icon"></div>
+        <p><input type="submit" name="submit" value="Submit" class="register" /></p>
+    </div>
+
+</form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </body></html>

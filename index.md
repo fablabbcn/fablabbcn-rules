@@ -432,7 +432,3 @@ Bullying is defined as unwelcome or unreasonable behavior that demeans, intimida
 
 
 **Everyone has the right to be treated with respect and dignity!**
-
-# SIGN THE AGREEMENT OF TERMS AND CONDITIONS OF LAB USAGE
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVjCIP8GqtwMeX17WzMVgrjLB6w9ySUDWCKr_1pEBHIbyIbw/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>

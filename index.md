@@ -56,8 +56,8 @@ Students have access to **IAAC Facilities** from 9:00hs to 20:00hs.
     26 de diciembre San Esteban (A)
 
  **IaaC Access Card**
- 
-When you arrive at IAAC you will be provided with an electronic access card to enter the premises, and keys to a locker. For the access card & locker keys, you will have to pay a 20€ deposit, to be reimbursed when you return the items. 
+
+When you arrive at IAAC you will be provided with an electronic access card to enter the premises, and keys to a locker. For the access card & locker keys, you will have to pay a 20€ deposit, to be reimbursed when you return the items.
 
 ## Spaces
 
@@ -78,7 +78,7 @@ P102 is comprised by several areas with distinct uses:
 * **Laser Area**: this room has the laser cutting machines, the Precious Plastics aea and the Metal Area. Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours.This room also has storage areas, students are not allowed to take material without asking.
 * **CNC area**: this area has the CNC milling machine, wood cutting tools and the Wood /materials rack. Students are allowed to use this area only under staff supervision and during students open hours.
 * **FAC Studio**: This is Fab Academy's classroom, it is reserved for staff and Fab Academy students only. This room contains tools and materials, non of which are slef-service.
-* **MDEF classroom**: This is MDEFs classroom; it is reserved for staff and students only. 
+* **MDEF classroom**: This is MDEFs classroom; it is reserved for staff and students only.
 * **3D printing room**: This room contains all the 3D printers; only students who have a machine booking are allowed to use this area under staff supervision.
 * **Electronics room**: This room contains all the tools & componens for electronic prodution, and the desktop milling machines; only students who have a machine booking are allowed to use this area under staff supervision.
 * **Kuka Area**: This area is reserved for 3DPA students and staff only.
@@ -204,15 +204,15 @@ MDEF, Fabricademy and Fab Academy are part of Fab Lab Barcelona's educational of
 
 Your Lab references for **Fabricademy** are:
 * Ana Correa: Fabricademy Lead Instructor
-* Petra Garajova: Lab Support 
+* Petra Garajova: Lab Support
 
 Your Lab references for **Fab Academy** are:
 * Josep Martí: Lead Instructor
-* Petra Garajova: Lab Support 
+* Petra Garajova: Lab Support
 
 Your Lab references for **MDEF** are:
 * Eduardo Chamorro, Josep Martí
-* Petra Garajova: Lab Support 
+* Petra Garajova: Lab Support
 
 
 The rest of the Fab Lab Barcelona will be happy to support you in any regard.
@@ -223,7 +223,7 @@ The rest of the Fab Lab Barcelona will be happy to support you in any regard.
 
 To be able to organize our work, we have a Booking System, that organizes our machining time. This booking system is used to book the Digital Fabrication Machines.
 
-To use any Digital Fabrication machine, you need to book it. 
+To use any Digital Fabrication machine, you need to book it.
 
 The instructions for the Booking system can be found [HERE](https://fablabbcn-projects.gitlab.io/learning/educational-docs/about/booking/)
 
@@ -277,15 +277,15 @@ Put special attention to:
 * CNC Milling: Includes small dust pieces anywhere on or under the machine, and on top of the control-box and computer.
 * Jigsaw: Should be cleaned from dust and replaced any broken blades.
 * Drill Press: Clean all the surface of the machine, table and surroundings.
-* Compound Circular saw: Cleaning surface, on top of the machine and table. 
+* Compound Circular saw: Cleaning surface, on top of the machine and table.
 * 3D Printer: Cleaning the machine and removing small pieces from the platform.
 * Laser cutter: After using the machine remove the material and clean the top of the bed, in case of small pieces removed the bed and vacuum the leftovers (call somebody from the staff for support removing the bed)
 * Bio & Matter Lab: leaving the surfaces clear and clean, in the case of materials that are drying out such as plaster casting, notify the fabricant assistant.
 * Carpenter tables in the wood workshop.
 
-❗️ In the case of finding a dirty machine prior to commencing your work, please report it to staff or you will have to clean it yourself. Working in a dirty environment is dangerous, risks compromising the machine’s safety or operation and will not be tolerated. 
+❗️ In the case of finding a dirty machine prior to commencing your work, please report it to staff or you will have to clean it yourself. Working in a dirty environment is dangerous, risks compromising the machine’s safety or operation and will not be tolerated.
 
-❗️ Part of cleaning is putting back all the tools in their appropriate storage space. 
+❗️ Part of cleaning is putting back all the tools in their appropriate storage space.
 
 ❗️ Failing to comply with any of these will be considered as a fault (See Penalty section). In an effort to reduce the amount of waste materials and promote recycling and reuse, it is important to separate and cut down all material off-cuts after use. Students are requested to cut up materials, such as wood and acrylics, in rectangular formats for easy storage.
 
@@ -324,7 +324,7 @@ If a project needs temporal storage in the workbenches or main workspaces is man
 
 ## Safety
 
-Use of this facility requires the use of standard safety precautions at all times. 
+Use of this facility requires the use of standard safety precautions at all times.
 The most important one is…
 
 ⛔️⛔️⛔️ **Never work alone** ⛔️⛔️⛔️
@@ -342,14 +342,14 @@ Also…
 * Always be aware of the safe operation of the machines. If you're unfamiliar with a particular machine, consult the workshop staff before using it.
 * Do not make parts in haste. Plan each job and procedure in advance. Determine what material and special tools may be needed.
 * Use the dustpan or vacuum to remove chips from a machine while it is not running; this is NOT to be done by hand.
-* Each student is required to report all issues, accidents, and tool breakages 
+* Each student is required to report all issues, accidents, and tool breakages
 * No food or drinks are allowed in the workshop areas.
 * Respect the machines and what they can (and can’t) do; never, ever use the machines for anything other than what they were designed to do, and never tamper, alter, or play with the equipment!
 * All students are required to clean the machine and sweep the work area before leaving the lab areas.
 
 ### Disclaimer
 
-IaaC | Fab Lab Bcn is not responsible for any personal damages derived from the use its facilities, and does not cover student’s health insurance. Students are responsible for their personal safety at all times. If damage or injury should occur, the student must seek immediate assistance and notify any IaaC | Fab Lab Bcn staff person as soon as possible, no matter how small the issue is. IaaC | Fab Lab Bcn has several fire extinguishers and first aid kits. 
+IaaC | Fab Lab Bcn is not responsible for any personal damages derived from the use its facilities, and does not cover student’s health insurance. Students are responsible for their personal safety at all times. If damage or injury should occur, the student must seek immediate assistance and notify any IaaC | Fab Lab Bcn staff person as soon as possible, no matter how small the issue is. IaaC | Fab Lab Bcn has several fire extinguishers and first aid kits.
 
 IaaC | Fab Lab Bcn is not responsible for any material loss within its facilities, and does not cover any material insurance. Students are responsible for their personal belongings at all times.
 
@@ -388,7 +388,7 @@ Attribution-NonCommercial-ShareAlike 3.0 Unported Creative Commons license
 
 ## EQUITY, EQUALITY & DIVERSITY
 
-IAAC’s Students, Instructors, Faculty, Evaluators, Collaborators, and Staff are expected to demonstrate appropriate judgment, ethical personal behavior, and common sense. 
+IAAC’s Students, Instructors, Faculty, Evaluators, Collaborators, and Staff are expected to demonstrate appropriate judgment, ethical personal behavior, and common sense.
 
 It is IAAC’s pledge to making participation in our programs and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
@@ -432,3 +432,7 @@ Bullying is defined as unwelcome or unreasonable behavior that demeans, intimida
 
 
 **Everyone has the right to be treated with respect and dignity!**
+
+# SIGN THE AGREEMENT OF TERMS AND CONDITIONS OF LAB USAGE
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVjCIP8GqtwMeX17WzMVgrjLB6w9ySUDWCKr_1pEBHIbyIbw/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>

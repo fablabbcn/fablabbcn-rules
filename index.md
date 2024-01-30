@@ -1,90 +1,90 @@
-# P102 Lab Protocol of Use
+# P102 SuperLab - Protocol of Use
 
-![fablab2](/assets/fablab2.jpg)
+# General Guidelines
 
-## General Guidelines
+## Introduction
 
-### Introduction
+IAAC is an international educational institution that offers a whole series of events running in parallel with the academic activities of its main Educational programmes (invited lecturers once a week, intensive workshops, professional symposiums, collaborations with professional creative groups, amongst others). Considering that IAAC’s facilities and infrastructure are intensively used and become highly contested spaces. As a student, you are joining a place of fervent design activity and theoretical debate. IAAC will provide a whole range of possibilities and the infrastructure to develop your own interests, enhance your productive skills and push your creative potential.
 
  IAAC, the Institute for advanced Architecture of Catalonia,  is a center for research, education, production and outreach; a platform that gathers several Projects:
 
-      ●	AAG - Advanced Architecture Group; that hosts the Master courses
-      ●	Fab City Research Lab, that includes Fab Lab Barcelona, and the Fab Academy Program
-      ●	Valldaura Labs
-      ●	Urban Science Lab
+```
+* AAG - Advanced Architecture Group
+* Fab Lab Barcelona
+* Valldaura Labs
+* Urban Science Lab
+* Robotics Lab
+```
 
 It has 3 campus:
 
-    ●	Pujades 102 (P102), where Fab Lab Barcelona is located
-    ●	Pujades 59 (P59) or IAAC Atelier
-    ●	Valldaura Labs, where the Green Fab Lab is located
+```
+* Pujades 102 (P102), where the SuperLab is located
+* Pujades 59 (P59) or IAAC Atelier
+* Valldaura Labs
+```
 
-You will have most of your activity happening in **Pujades 102 building or P102**
 
 
-#### Access to P102 / Fab Lab Barcelona
+## Access to P102 / SuperLab 
 
 **Opening Hours:**
 
-Students have access to **IAAC Facilities** from 9:00hs to 20:00hs.
-
-**Fabrication facilities** are open Mon to Friday from 10:00hs to 14:00hs and from 15:00hs to 19:00hs. Every Program has an assignated day/days to fabricate.
-
-**Secretary office** hours for students, Monday to Thursday, from 10 to 16 pm.
-
-**Saturdays and Sundays, the Fab Lab Barcelona is closed**.
+Students have access to IAAC Facilities (classrooms and studios) from 9:00hs to 21:00hs, and from 9.00 am to 4.00 pm Saturday, except for public holidays. Students are allowed to freely access the space at any time within these hours. Labs, such as the ProtoLab, BioLab, SuperLab, etc. work with different timetables.
+Fabrication time from 10:00hs to 14:00hs and from 15:00hs to 19:00hs. here are certain spaces and machinery that always require a Fabrication Team member to be present in order to ensure safe use and to provide any assistance if required. This means that these spaces and machines will not be accessible to students outside of office hours. Students are never allowed to use certain machines or workshops on the weekends unless special permission has been granted and students have been informed beforehand by mail.
+Sunday, IAAC is closed.
 
 ⛔️It is forbidden to stay at IaaC overnight⛔️
 
 
 **National Holidays**
 
-    1 de enero Año Nuevo (E)
-    6 de enero Reyes (E)
-    7 de Abril, Viernes Santo (E)
-    9 de abril, Pascua (A)
-    1 de mayo Fiesta del Trabajo (E)
-    24 Junio, San Juan
-    15 Agosto, la Asuncion
-    11 de Septiembre Diada Nacional de Cataluña (A)
-    24 de setiembre Virgen de la Mercè (L)
-    12 de octubre Fiesta Nacional de España (E)
-    1 de noviembre Todos los Santos (E)
-    6 de diciembre Día de la Constitución (E)
-    8 de diciembre la Inmaculada (E)
-    25 de diciembre Navidad (E)
-    26 de diciembre San Esteban (A)
+
+```
+
+Jan 1º New Year
+Jan 6th Three Kings
+March 29th  Viernes Santo 
+April 1º,  Easter 
+May 1, International Workers' Day
+June 24th, San Juan
+Aug 15th, la Asuncion
+Sept 11th, Diada Nacional de Cataluña 
+Sept 24th, Virgen de la Mercè 
+Oct 12th, Fiesta Nacional de España 
+Nov 1º, All Saints 
+Dec 6th, Día de la Constitución 
+Dec 8th, La Inmaculada 
+Dec 25th, Christmas
+Dec 26th, San Esteban
+Dec 23rd to Jan 2nd, Winter Break 
+```
+
 
  **IaaC Access Card**
 
 When you arrive at IAAC you will be provided with an electronic access card to enter the premises, and keys to a locker. For the access card & locker keys, you will have to pay a 20€ deposit, to be reimbursed when you return the items.
 
-## Spaces
-
-IAAC offers the **P102 fabrication facilities** to the following students:
-
-        ●	MDEF students
-        ●	Fab Academy students
-        ●	Fabricademy students
-        ●	Workshop and Bootcamp students
 
 
 P102 is comprised by several areas with distinct uses:
 
-#### P102 - Fab Lab  Pujades 102 - floor plan
+## P102 - SuperLab  - floor plan
 
-![Screenshot 2022-01-24 142346](/assets/planta_usos_2023.png)
+![Screenshot 2022-01-24 142346](/assets/planta_usos_2024.png)
 
-* **Laser Area**: this room has the laser cutting machines, the Precious Plastics aea and the Metal Area. Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours.This room also has storage areas, students are not allowed to take material without asking.
-* **CNC area**: this area has the CNC milling machine, wood cutting tools and the Wood /materials rack. Students are allowed to use this area only under staff supervision and during students open hours.
-* **FAC Studio**: This is Fab Academy's classroom, it is reserved for staff and Fab Academy students only. This room contains tools and materials, non of which are slef-service.
-* **MDEF classroom**: This is MDEFs classroom; it is reserved for staff and students only.
-* **3D printing room**: This room contains all the 3D printers; only students who have a machine booking are allowed to use this area under staff supervision.
-* **Electronics room**: This room contains all the tools & componens for electronic prodution, and the desktop milling machines; only students who have a machine booking are allowed to use this area under staff supervision.
-* **Kuka Area**: This area is reserved for 3DPA students and staff only.
-* **Adaptable Area**: this is a multipurpose area, you can use it only as a “hot-desk” and only if its available. No permanent projects or objects should be left in this area.
-* **Fabricademy classroom**: this is Fabricademy student's classroom and studio;  it is reserved for staff and students only.
-* **BioLab**: this Laboratoria has been conditioned to work with bio materials. Only students who have booked time to work in the BioLab are allowed to use this area, and only under staff supervision.
+● **Laser Area & 3D Printing Area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
+● **Restricted Area**: Only staff are allowed to use this area.
+● **CNC area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
+● **SuperLab Team Office & Meeting Room**: Only staff are allowed to use this area
+● **Electronics room**: Students are allowed to use this area under staff supervision during the students open hours.
+● **Protolab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students. Always remember to follow correct safety procedures when using the machines. 
+● **BioLab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students.
+● **Open Space**: this is a multipurpose area, you can use it only as a “hot-desk” and only if its available. No permanent projects or objects should be left in this area.
+● **Robotics Area**: This area is reserved for staff and MRAC students. Always remember to follow correct safety procedures when using the machines. 
+● **Wood workshop**: An area to work with noisy/dust-emitting equipment. This is the space to use the wood power tools (jigsaw, circular saw, belt sander, router, circular sander, column driller, bend saw etc), and some hand tools (hammer. drill, saw, rulers, cutters, chisels, hand saws). People who want to use the machines in this area should follow appropriate security measures at all times and wear proper clothing
+● **Fabricademy & Fab Academy classroom**: on top of the Biolab, there is a classroom for online lectures.
+
 
 _People not using the machines are not allowed to remain in the areas surrounding the machines: Please keep the space free for other students using the space._
 
@@ -92,7 +92,7 @@ _Tools and machines each have a designated area: Please keep them organized for 
 
 _The lack of respect of these rules, leading to disorganization in the Lab, will be penalised._
 
-**General rules of spaces use**
+### General rules of spaces use
 
 🚫 **Food/Drinks:** Food is not allowed in any of the Fab Lab areas. You can dring water, tea, sodas or coffee, but no alcoholic drinks can be brought into any of the facilities. Make sure to pick up your trash, leaving the spaces and tables clean.
 
@@ -108,90 +108,51 @@ _The lack of respect of these rules, leading to disorganization in the Lab, will
 ## Machines & Tools
 
 
-P102 Fab Lab offers student access to machines & tools, on different regimes:
+IAAC offers students access to the following tools and machines, provided that the student has received adequate training and safety clearance. 
 
-1. Fabrication machines via [booking system](https://booking.fablabbcn.org/) (24hs in advance)
-2. Electrical & power tools upon express request
-3. Specific tools via email request (48hs in advance)
+1. Basic Hand tools
+2. Electrical & power tools 
+3. Digital Fabrication machines via [booking system](https://iaac.simplybook.it/v2/)
+4. Specific tools and equipment
 
-### 1. Fabrication Machines - Via booking system :
 
-**Laser Cutters**:
+### 1. Basic Tools in free access
 
-![big_124314-1055005](/assets/big_124314-1055005.jpg)
+Some basic tools (rulers, clamps, files, hammers, etc…) are accessible in the CNC/wood shop area as a complement to your student toolkit. These can be found displayed in an open tool rack installed inside this room and within various shelving units around the space. Students are requested to return the tools used in their appropriate place in the designated area, and not to be transferred to other areas and labs.
 
-Trotec speedy 300  Trotec speedy 400
+In order to share access to these tools, it is important to return all the tools back immediately after use and in their correct location. Students are not allowed to take the tools outside the dusty/CNC, outside the lab or to any studio spaces. Failure to comply will be automatically penalized. (See Penalty section). The Fab team will regularly verify that all the tools are returned and placed correctly.
 
-**CNC Milling machine**
+### 2. Power Tools and equipment on request
 
-Raptor XSL CNC
-![64456-16040484](/assets/64456-16040484.webp)
+![power-tools.png](/assets/power-tools.png)
 
-**3D printers**:
+A number of power tools (Drill, Sander, ScrewDriver etc..) can be found within the dusty/CNC area for student use that can be freely accessed. 
 
-![image_21](/assets/image_21.jpg)
+**Even if you are familiar with the tools, if this is your first time using them, ask the assistants for help.**
 
-Ender3 (x3)
-Creality CR-10
-Hypercube Evo
-Formlab
-Prusa i3
-Photon S
+In order to share access to these tools, it is important to return all the tools back immediately after use and in the correct location. Students are not allowed to take the tools to the 1st floor, outside the lab or to any studio. Failure to comply will be automatically penalised. (See Penalty section).
+The Fab team will regularly verify that all the tools are returned and placed correctly. Any tool misuse, loss or damage has to be communicated to a Fab team staff member. Failing to do so will be considered as a fault (See Penalty section).
 
-**CNC Precision Milling machine:**
+### 3. Digital Fabrication Machines 
 
-![roland-mono-fab-srm-20-p80713057_2](/assets/roland-mono-fab-srm-20-p80713057_2.png)
 
-Monofab SRM 20 (x2)
+Digital Fabrication Machines
 
-![mdx20](/assets/mdx20.jpg)
+![digifab-machines1.png](/assets/digifab-machines1.png)
 
-MDX-20
+![digifab-machines2.png](/assets/digifab-machines2.png)
 
-![61jUn4SAGeL.\_AC_SY355_](/assets/61jUn4SAGeL._AC_SY355__kwmm3k2x2.jpg)
 
-CNC 1810
 
-**Vinyl cutter**:
+### 4. Other tools and equipment
 
-![image_10](/assets/image_10.jpg)
+Some basic tools are available by request in the SuperLab offices such as:
 
-GX-24 Camm Servo
+* Bandsaw for Metal 
+* Power Tool set for metal
+* Tools: PRECISION SCALE, K, CALIPER, TRIPODS (different sizes), BACKDROPS, HEAT GUNS, MULTIMETERS, DREMEL, THERMAL CAMERAS, PROJECTOR, KINNECT, CABLE EXTENSORS, POWER STRIPS, INFRARED THERMOMETER & Others.
 
-![plotter-de-corte-30-5cm-silhouette-cameo-3](/assets/plotter-de-corte-30-5cm-silhouette-cameo-3_iee2zdvxd.jpg)
-
-Silhoutte Cameo
-
-**Others**
-
-![image_11](/assets/image_11_phxv3v87p.png)
-
-Vacuum Press
-
-![image_12](/assets/image_12.jpg)
-
-Large Oven
-\+
-Vulcano Kiln
-
-#### 2.1 Basic Tools in free access
-
-Some basic tools (Rulers, Clamps, Hammers, etc…) are accessible in the dusty/CNC area as a complement of your student’s toolkit.
-Students are requested to leave the tools used in his appropriate place marked in the designated area of their shelves.
-Tools should remain within the fablab area, in their respective room. Taking tools out of the lab without explicit permission will be penalised.
-
-#### 2.2 Power Tools and equipment on request
-
-Power tools (Drill, Sander, ScrewDriver etc..) and some electronic equipment (Camera, power supply, Tripod, etc...) are available by request from the fab lab staff. To keep the lab tools well organized and the process safe, students should request help from fabrication assistants.
-
-Students are requested to return the tools they used back to their appropriate place.
-
-Tools should remain within the fablab area, in their respective room. Taking tools out of the lab without explicit permission will be penalized (see chapter “Penalties” at the end of this document
-
-**All borrowed tools/machines need to be given back by the end of the day (before 8 pm)**
-
-In case a student fails to do so he or she will be responsible to replace the item. Any misuse, loss or damage has to be noticed by informing one of the fabrication assistants. Failing to do so will be considered as a fault.
-
+**Please bear in mind that the maximum period allowed to borrow equipment and tools is 24 hours.** 
 
 ### Files
 
@@ -200,42 +161,58 @@ Please, access the cloud and create your own student folder inside your respecti
 
 ### Staff
 
-MDEF, Fabricademy and Fab Academy are part of Fab Lab Barcelona's educational offer and as such is part of the FLU: Future Learning Unit.
 
 Your Lab references for **Fabricademy** are:
-* Ana Correa: Fabricademy Lead Instructor
-* Petra Garajova: Lab Support
+* Petra Garajova: Fabricademy Lead Instructor
+* Emma Picanyol:  Support
 
 Your Lab references for **Fab Academy** are:
 * Josep Martí: Lead Instructor
-* Petra Garajova: Lab Support
+* Adai Suriñac: Support
 
 Your Lab references for **MDEF** are:
-* Eduardo Chamorro, Josep Martí
-* Petra Garajova: Lab Support
+* Santiago Fuenemilla, Josep Martí
 
 
-The rest of the Fab Lab Barcelona will be happy to support you in any regard.
+SuperLab team: Shyam, Philip, Didac, Riaz
 
-      You can contact us via info@fablabbcn.org
 
-### Booking System for Digital Fabrication Machines
+## Booking System for Digital Fabrication Machines
 
-To be able to organize our work, we have a Booking System, that organizes our machining time. This booking system is used to book the Digital Fabrication Machines.
+**To use any machine in the Lab, users must reserve them first via our Booking System.**
 
-To use any Digital Fabrication machine, you need to book it.
+**BEFORE BOOKING**
 
-The instructions for the Booking system can be found [HERE](https://fablabbcn-projects.gitlab.io/learning/educational-docs/about/booking/)
+To book any machine you must have all the below things done:
 
+1. Sign the terms and conditions you have signed online
+2. Have training in the use of EVERY MACHINE
+3. Pass the online TEST
+4. Your name must be added to the trained user list
+5. Preparing files and production plan
+6. Then…booking!
+
+**BOOKING SYSTEM INSTRUCTIONS**
+
+To make your reservation, go to Booking system Iaac booking system (https://iaac.simplybook.it/v2/)
+
+1. Log in with your email (the one you use in your application form).
+2. Select the machine or tool you want to use.
+3. Select the duration you intend to use the machine or tool (30 min, 1, 2, 3, 4 hrs).
+4. Select the appropriate day and time from the available time slots.
+5. To finish, click "BOOK NOW".
 
 > Failure to respect the rules and conditions pertaining to the booking system will result in a cancellation of the booking by staff. Repetitive misuse of the booking system will be considered a fault.
+> 
 
-#### General rules for Booking Slots
+### General rules for Booking Slots
 
-⚠️ Be aware ⚠️
+⚠️ **Be aware** ⚠️
 
 
 - ONE-SLOT RULE. Students are not allowed to use more than one slot per machine per day. Take into consideration that many other users need access too.
+
+- 4-PER-MONTH RULE. Students are not allowed to use more than four slots per machine per month.
 
 - NO-SOLO USE. Students cannot use machines without supervision.
 
@@ -247,6 +224,10 @@ The instructions for the Booking system can be found [HERE](https://fablabbcn-pr
 
 - FILE TYPE. It is mandatory to have your files in Rhino v6 file, .DXF or .STL to properly use the machines.
 
+- TOOL TYPE. Check the availability of the tools chosen for the machine booked: end effector for the robot, mill bits for the CNC.
+
+- DAMAGES. If any tools are broken or damaged, report to the staff immediately. 
+
 - BE PUNCTUAL. Punctuality is important to allow everyone fair use of the space. You are requested to come 10 min before your reservation to prepare your material and file. Any delay will shorten that student’s fabrication time on the machine. A delay of more than 15 minutes automatically results in a canceled reservation. Missing your reservation without notifying Fab lab staff will be considered as a fault (See Penalties section).
 
 - PLAN AHEAD. Plan well ahead, and make your request at least 48h before needed. If your project requires more time than what is typically allocated on the booking system, it is obligatory to contact your assigned fabrication expert with the files you need to print, cut or mill along with a description of the material to be used.
@@ -257,6 +238,42 @@ The instructions for the Booking system can be found [HERE](https://fablabbcn-pr
 
 - STAY SAFE. Always stay attentive and practice safe machine usage (See Safety)!
 
+#### Lending tools
+
+* The Lab staff will keep a record of the tools and equipment lent to students. When a tool is borrowed, the equipment along with the person responsible for it will be registered in our database.
+* The students should write their name and date at the time of the loan.
+* The maximum amount of time allowed to rent a tool is 24h.
+* The person borrowing the equipment will be the one responsible to return it in proper working condition. In the case of group work, one member will need to be designated as the one responsible to rent out and return the tool in good working order.
+* All borrowed tools need to be given back in the time frame agreed.
+* In case a tool is damaged or broken, the student responsible should inform the Fab team. Not informing about the damage or the bad conditions tool will be automatically penalized. In case of damage, the respective students are liable to replace the tools. 
+
+
+### Skills and Knowledge
+
+**Training**
+To use any of the available tools or machines, students are required to receive training and pass an evaluation test. Access to the machines depends on the specific training received and differs from one educational program to another. 
+
+**Basic Tools**
+Training for hand tools, power tools, electronic equipment and lending equipment is provided for those students participating in the optional Fabrication Precourse. Students who don’t participate will require additional training that can be provided upon request.
+
+**Digital Fabrication Machines**
+Training for the laser cutter, CNC machines and 3D printers is provided during specific weeks. Once students receive training in the specific technologies they will have to pass the online test to be able to have access to the booking system for that specific technology. If you fail the test, your rights will be revoked and you’ll have to pass the tests again.
+
+**Robots**
+Training on industrial robots is provided during specific workshops organized by the Instructors. Students from Academany programs don’t have direct access to this technology.
+
+**Others**
+Training for other tools or machines not listed above (oven, vacuum thermoforming, vinyl cutter…) can be provided upon request *
+
+*Training for these machines requires planning in advance and needs to be organized according to student demand and professor availability. Please contact the fabrication support for more information. 
+
+**Examination**
+Knowledge of basic security rules and machine use are assessed through a standardized online exam (Fab Test). This test will be given at least once per term to assess whether students are capable of using the machines independently or not. Alternatively, students can also test their skills and knowledge directly on particular machines with staff assessment.
+Students who do not pass or attend the test are not allowed to use the machines on their own, nor to book machines online. For those students that do not pass but require machine use, there is the option to ask other students that have passed to book and fabricate the files for you.
+
+**Support Assistants and Hours**
+SuperLab Fabrication assistants are available for specific support during the fabrication process and the use of the machines. 
+Files, project and design reviews are in the hands of your Instructors.
 
 
 ### Hazardous Materials
@@ -302,10 +319,10 @@ In the case of 3D Printer, Material is purchased by Fablab and based on normal u
 
 ### Storage
 
-Due to the amount of space available, there is no permanent storage.
-Students have designated storage space in their classrooms.
+Due to the amount of space available, **there is no permanent storage**.
+Students have designated storage space in their classrooms and lockers
 
-Students are allowed to store material in the Fab Lab only if it will be used in the same month. Everything should be stored in boxes with the name of the student / Name of the class or project and date of the beginning of storage. If this is not clearly visible on the box, this material may be displaced or used.
+Students are allowed to store material in the ProtoLab only if it will be used in the same week, and with express consent from the Instructors. Everything should be stored in boxes with the name of the student / Name of the class or project and date of the beginning of storage. If this is not clearly visible on the box, this material may be displaced or used.
 
 The institution is not responsible for the materials left in the space and can’t guarantee the safety or integrity of your tools, project, and material if not properly stored. To avoid any issue with a lost or broken object, please get in touch with any Fabrication assistant to find a proper solution.
 
@@ -313,7 +330,7 @@ The institution is not responsible for the materials left in the space and can�
 
 Additionally, IAAC FabLab Staff has specific storage spaces that should be respected. Never pick an item from this shelves in self-services.  In doubt, always ask before.
 
-* **3D Print Material shelves:** A place to store 3DPrint materials. To be used only under FabLab Staff supervision. Students are requested to leave the 3d print materials used in the appropriate place. Please keep the materials well organized.
+* **3D Print Material shelves:** A place to store 3DPrint materials. To be used only under SuperLab Staff supervision. Students are requested to leave the 3d print materials used in the appropriate place. Please keep the materials well organized.
 * **Material Lab Shelves:** A place to store mixing, casting and cleaning material for the lab. Access only under Staff authorization and supervision.
 * **Storage Shelves/Cabinets:**  Staff only, Students do not have access to this area.
 
@@ -349,10 +366,13 @@ Also…
 
 ### Disclaimer
 
-IaaC | Fab Lab Bcn is not responsible for any personal damages derived from the use its facilities, and does not cover student’s health insurance. Students are responsible for their personal safety at all times. If damage or injury should occur, the student must seek immediate assistance and notify any IaaC | Fab Lab Bcn staff person as soon as possible, no matter how small the issue is. IaaC | Fab Lab Bcn has several fire extinguishers and first aid kits.
+IaaC | Fab Lab Bcn are not responsible for any personal damages derived from the use its facilities, and does not cover student’s health insurance. Students are responsible for their personal safety at all times. If damage or injury should occur, the student must seek immediate assistance and notify any IaaC | Fab Lab Bcn staff person as soon as possible, no matter how small the issue is. IaaC | Fab Lab Bcn has several fire extinguishers and first aid kits.
 
-IaaC | Fab Lab Bcn is not responsible for any material loss within its facilities, and does not cover any material insurance. Students are responsible for their personal belongings at all times.
+IaaC | Fab Lab Bcn are not responsible for any material loss within its facilities, and does not cover any material insurance. Students are responsible for their personal belongings at all times.
 
+**Please note that it is NOT ALLOWED under any circumstances to use IAAC facilities without any health insurance coverage.**
+
+🏥 In the case of health emergencies, students are advised to go directly to the emergency ward of the Hospital del Mar (Passeig Marítim de la Barceloneta, 25, 29, 08003 Barcelona)
 
 
 ## Penalties

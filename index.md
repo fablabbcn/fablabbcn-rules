@@ -73,17 +73,27 @@ P102 is comprised by several areas with distinct uses:
 
 ![Screenshot 2022-01-24 142346](/assets/planta_usos_2024.png)
 
-● **Laser Area & 3D Printing Area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
-● **Restricted Area**: Only staff are allowed to use this area.
-● **CNC area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
-● **SuperLab Team Office & Meeting Room**: Only staff are allowed to use this area
-● **Electronics room**: Students are allowed to use this area under staff supervision during the students open hours.
-● **Protolab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students. Always remember to follow correct safety procedures when using the machines. 
-● **BioLab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students.
-● **Open Space**: this is a multipurpose area, you can use it only as a “hot-desk” and only if its available. No permanent projects or objects should be left in this area.
-● **Robotics Area**: This area is reserved for staff and MRAC students. Always remember to follow correct safety procedures when using the machines. 
-● **Wood workshop**: An area to work with noisy/dust-emitting equipment. This is the space to use the wood power tools (jigsaw, circular saw, belt sander, router, circular sander, column driller, bend saw etc), and some hand tools (hammer. drill, saw, rulers, cutters, chisels, hand saws). People who want to use the machines in this area should follow appropriate security measures at all times and wear proper clothing
-● **Fabricademy & Fab Academy classroom**: on top of the Biolab, there is a classroom for online lectures.
+**Laser Area & 3D Printing Area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
+
+**Restricted Area**: Only staff are allowed to use this area.
+
+**CNC area**: Only students who have a machine booking are allowed to use this area under staff supervision during the students open hours. Always remember to follow correct safety procedures when using the machines. 
+
+**SuperLab Team Office & Meeting Room**: Only staff are allowed to use this area
+
+**Electronics room**: Students are allowed to use this area under staff supervision during the students open hours.
+
+**Protolab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students. Always remember to follow correct safety procedures when using the machines. 
+
+**BioLab**: This area is reserved for staff, Fab Academy, Fabricademy and MDEF students.
+
+**Open Space**: this is a multipurpose area, you can use it only as a “hot-desk” and only if its available. No permanent projects or objects should be left in this area.
+
+**Robotics Area**: This area is reserved for staff and MRAC students. Always remember to follow correct safety procedures when using the machines. 
+
+**Wood workshop**: An area to work with noisy/dust-emitting equipment. This is the space to use the wood power tools (jigsaw, circular saw, belt sander, router, circular sander, column driller, bend saw etc), and some hand tools (hammer. drill, saw, rulers, cutters, chisels, hand saws). People who want to use the machines in this area should follow appropriate security measures at all times and wear proper clothing
+
+**Fabricademy & Fab Academy classroom**: on top of the Biolab, there is a classroom for online lectures.
 
 
 _People not using the machines are not allowed to remain in the areas surrounding the machines: Please keep the space free for other students using the space._
